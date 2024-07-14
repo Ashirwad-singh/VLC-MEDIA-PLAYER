@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input:valid{
+           border:3px solid green;
+        }
+        input:invalid{
+            border:2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:brown;text-align:center;">Form</h1>
+<form action=""  >
+    <fieldset >
+        <legend>Form</legend>
+    <label for="nn">Nick name:</label>
+    <input type="text" id="nn" readonly>
+    <br><br>
+    <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="enter your name:">
+            <br><br>
+    <label for="email">Email:</label>
+        <input type="email" id="email"  required>
+            <br><br>
+    <label for="num">Number:</label>        
+        <input type="number" id="num" min="10" max="100" value="12" step="3">
+            <br><br>
+    <label for="pass">password:</label>  
+        <input type="password" id="pass" minlength="8" maxlength="12">  
+             <br><br>
+    <label for="date">Date:</label>
+        <input type="date" id="date">
+             <br><br>
+    <label for="time">Time:</label>
+        <input type="time" id="time"placeholder="Date">
+             <br><br>
+    <label for="col"> color:</label>
+        <input type="color" id="col" >
+            <br><br>
+    <label for="search">search:</label>
+        <input type="search" id="search">
+            <br><br>
+    <label for="file">file:</label>
+        <input type="file" id="file">
+        <br><br>
+    <label for="credit">credit card:</label>
+    <input type="text" id="credit" pattern="\d{16}">
+    <br><br>
+    <label for="phone">phone</label>
+    <input type="tel" id="phone" pattern="[+][9][1]\d{10}">
+    <br><br>
+    <label for="url">Url</label>
+    <input type="url" id="url">
+    <br><br>
+    <label for="url"> My Url</label>
+    <input type="text" id="url" pattern="https?://.+">
+    <br><br>
+    <label for="search">Comment:</label>
+    <textarea name="" id="search" rows="10" cols="10"></textarea>
+    <br><br>
+    <label for="drop-down">Languages:</label>
+    <select name="" id="drop-down">
+        <option value="01">java</option>
+        <option value="02" selected>html</option>
+        <option value="03">css</option>
+    </select>
+    <br><br>
+    <fieldset> 
+        <legend>choose as per your need</legend>
+<label for="H">playing cricket:</label>
+<input type="checkbox" id="H" >
+<label for="m">watching movies:</label>
+<input type="checkbox" id="m" >
+    </fieldset>
+<br><br>
+<fieldset> 
+    <legend>choose any one</legend>
+<label for="Ha">Yes:</label>
+<input type="radio" id="Ha"name="aa"  >
+<label for="ma">No:</label>
+<input type="radio" id="ma" name="aa" >
+</fieldset>
+<br><br>
+
+        <input type="submit" >
+        <input type="reset">
+        <input type="range" min="10" max="100" value="20" step="4">
+    </fieldset>
+</form>
+</body>
+</html>

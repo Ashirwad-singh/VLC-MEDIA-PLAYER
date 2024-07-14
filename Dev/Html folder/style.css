@@ -1,0 +1,26 @@
+.main{
+    width:500px;
+    height:500px;
+    background-color:red;
+    color:white;
+    font-size: larger;
+    border-bottom:5px solid red;
+    border-top:5px solid green;
+    border-left:5px solid rgb(113, 128, 0);
+    border-right:5px solid blue;
+
+}
+.main:hover{
+    background-color: orange;
+    color:aquamarine;
+}
+.row1{
+    border-bottom:15px solid rgb(14, 11, 11);
+    border-top:15px solid rgb(81, 83, 81);
+    border-left:15px solid rgb(167, 176, 92);
+    border-right:15px solid rgb(110, 110, 153);
+    width:430px;
+    height:430px;
+    margin:10px;
+    padding:10px;
+}
